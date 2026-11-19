@@ -33,7 +33,7 @@ flowchart LR
 
 ## 빠른 실행
 
-프로젝트 최상위(`subject9_machinevision`)에서 실행합니다.
+저장소 최상위 폴더(`machine-vision-inspection/`)에서 실행합니다.
 
 ```bash
 # 1~3일차 흐름

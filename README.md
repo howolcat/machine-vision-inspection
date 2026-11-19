@@ -1,4 +1,4 @@
-# prj09 — 교과 9 머신비전 실습
+# machine-vision-inspection — 교과 9 머신비전 실습
 
 OpenCV로 이미지를 측정하고, 규칙(Rule)으로 OK / NG를 판정하는 머신비전 검사 실습 저장소입니다.
 
@@ -9,6 +9,8 @@ OpenCV로 이미지를 측정하고, 규칙(Rule)으로 OK / NG를 판정하는 
 | 1일차 | `00` ~ `08` | 환경 확인, 이미지·영상 읽기, ROI, 웹캠·휴대폰 카메라 |
 | 2일차 | `09` ~ `17` | 색공간, 밝기·대비, Gamma, CLAHE, 필터, Threshold(Otsu), 전처리 비교 |
 | 3일차 | `18` ~ `23` | Morphology, Contour 측정, 병뚜껑 유무 Rule, Batch Test |
+| 4일차 | `24` ~ `32` | GrabCut, MeanShift, Template Matching, ORB · SIFT 특징점 매칭, Homography, 방법별 비교 |
+| 5일차 | `33` ~ `39` | 제품 로고 검사: 특징 확인, Calibration 측정·분석, Rule 고정(JSON), Test 판정, 성능 평가(혼동행렬) |
 | API | `cap_inspector.py`, `fastapi_cap_app.py`, `web/` | IP Webcam 실시간 병뚜껑 검사 (FastAPI) |
 
 ```bash
@@ -28,11 +30,11 @@ uvicorn src.fastapi_cap_app:app --reload
 ## 폴더 구조
 
 ```text
-prj09/
-├── src/        수업 실습 코드 (00 ~ 23) + 병뚜껑 검사 API
+machine-vision-inspection/
+├── src/        수업 실습 코드 (00 ~ 39) + 병뚜껑 검사 API
 ├── web/        병뚜껑 검사 화면
 ├── samples/    실습 이미지·영상
 ├── outputs/    실습 결과 이미지
-├── reports/    결과 CSV, 문제 정의
+├── reports/    결과 CSV, 문제 정의, 5일차 성능 평가
 └── practice/   복습 프로젝트 (케이블 체결 검사)
 ```
